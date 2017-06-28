@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/vader/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+    <title>Trying out some jQueryUI</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Check out some fun jQuery and jQueryUI interactive effects</h1>
+            <h3>jQueryUI is hard at work on all buttons on the page!</h3>
+        </div>
+        <div id="main-content">
+            <div class="jQueryUIEffect" id="visibility">
+                <div class="subhead">
+                    <h2>Accordian - jQueryUI</h2>
+                    <h3>Examples of jQuery code that impact visibility!</h3>
+                </div>
+                <div id="accordion">
+                    <h3>.hide and .show</h3>
+                    <div id="hide-show">
+                        <h3>Click a paragraph below to see the .hide function in action</h3>
+                        <p>Click me</p>
+                        <p>Or me</p>
+                        <p>Or even me!</p>
+                        <h3>Then click the button below to see the .show function bring them back</h3>
+                        <button class="ui-button ui-widget ui-corner-all">.show</button>
+                    </div>
+                    <h3>.toggle</h3>
+                    <div id="toggle">
+                        <h3>.toggle is like .hide and .show all in one!</h3>
+                        <button class="ui-button ui-widget ui-corner-all">Click here</button>
+                        <p>Watch me .toggle</p>
+                    </div>
+                    <h3>.slideUp and .slideDown</h3>
+                    <div id="slide-down-up">
+                        <button class="ui-button ui-widget ui-corner-all" id="slideUp">Click me for .slideUp</button>
+                        <button class="ui-button ui-widget ui-corner-all" id="slideDown">Click me for .slideDown</button>
+                        <a href="http://imgur.com/XDZv7K8"><img src="http://i.imgur.com/XDZv7K8s.jpg" title="source: imgur.com" /></a>
+                    </div>
+                    <h3>.slideToggle</h3>
+                    <div id='slideToggle'>
+                        <h3>.slideToggle is like .slideUp and .slideDown all in one!</h3>
+                        <button class="ui-button ui-widget ui-corner-all">Click me to .slideToggle</button>
+                        <a href="http://imgur.com/X3u8QJw"><img src="http://i.imgur.com/X3u8QJws.jpg" title="source: imgur.com" /></a>
+                    </div>
+                    <h3>.fadeIn and .fadeOut</h3>
+                    <div id="fade-in-out">
+                        <h3>Hover over the image to make it .fadeOut</h3>
+                        <button class="ui-button ui-widget ui-corner-all">Then click here to make it .fadeIn</button>
+                        <a href="http://imgur.com/DYnC8os"><img src="http://i.imgur.com/DYnC8oss.jpg" title="source: imgur.com" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="jQueryUIEffect">
+                <div class="subhead">
+                    <h2>Tab - jQuery UI</h2>
+                    <h3>Examples of jQuery code that change the content or formatting!</h3>
+                </div>
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">.before and .after</a></li>
+                        <li><a href="#tabs-2">.append</a></li>
+                        <li><a href="#tabs-3">.html, .text, and .css</a></li>
+                        <li><a href="#tabs-4">.addClass and .removeClass</a></li>
+                        <li><a href="#tabs-5">.attr and .val</a></li>
+                        <li><a href="#tabs-6">.data</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <div id="before-after">
+                            <h2>.before and .after</h2>
+                            <h3>Insert content .before or .after a selected element</h3>
+                            <p id="before">Click me to insert a greeting before</p>
+                            <p id="after">Click me to insert a valediction after</p>
+                        </div>
+                    </div>
+                    <div id="tabs-2">
+                        <div id="append">
+                            <h3>Modify an html element by .append ing to the end of that element</h3>
+                            <p>Will you be able to append this?</p>
+                            <button class="ui-button ui-widget ui-corner-all">Click here to try</button>
+                        </div>
+                    </div>
+                    <div id="tabs-3">
+                        <div id="html-text">
+                            <h3>Grab or replace the content of an html element, or just grab the text of that element.</h3>
+                            <h3>Even change css styles with your new text!</h3>
+                            <p id="change">Click to add a <span></span> word and color to this sentence</p>
+                            <div>
+                                <button class="ui-button ui-widget ui-corner-all word">fantastic</button>
+                                <button class="ui-button ui-widget ui-corner-all word">thrilling</button>
+                                <button class="ui-button ui-widget ui-corner-all word">superb</button>
+                            </div>
+                            <div>
+                                <button class="ui-button ui-widget ui-corner-all color-selector" id="red">Red</button>
+                                <button class="ui-button ui-widget ui-corner-all color-selector" id="purple">Purple</button>
+                                <button class="ui-button ui-widget ui-corner-all color-selector" id="blue">Blue</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabs-4">
+                        <div id="add-class">
+                            <p><span>Click</span> <span>any</span> <span>word</span> <span>to</span> <span>highlight</span> <span>by</span> <span>adding</span> <span>class</span> <span>.highlight</span></p>
+                            <button class="ui-button ui-widget ui-corner-all">Click here to reset and remove the .highlight class</button>
+                        </div>
+                    </div>
+                    <div id="tabs-5">
+                        <div id="attr">
+                            <h3>Retrieve a value and assign an attribute</h3>
+                            <a href="http://imgur.com/i7VuBWc"><img src="http://i.imgur.com/i7VuBWcs.jpg" title="source: imgur.com" /></a>
+                            <p>Write an alt for the image, then mouse over to see it at work</p> 
+                            <input type="text" value="">
+                        </div>
+                    </div>
+                    <div id="tabs-6">
+                        <div id="data">
+                            <h3>Store and retrive data on an html element</h3>
+                            <p id="data-collector">Click the 1st button below to attach data to this element</p>
+                            <p>Then click the 2nd to print that data into this div</p>
+                            <button class="ui-button ui-widget ui-corner-all" id="attach-data">Attach data</button>
+                            <button class="ui-button ui-widget ui-corner-all" id="retrieve-data">Retrieve and print data</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
